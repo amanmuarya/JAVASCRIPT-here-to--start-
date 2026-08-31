@@ -1,0 +1,47 @@
+## keyword
+
+A keyword is a reserved word in JavaScript with a predefined
+ meaning that cannot be used as an identifier.
+
+ ## let , ver , const 
+
+ ** what is var **
+
+✅ Used to declare variables.
+✅ Can be redeclared.
+✅ Can be reassigned.
+✅ Has function scope (not block scope).
+    and windo me add hota hai 
+
+##Exam Definition
+
+Scope is the area where a variable can be accessed or used.
+
+var → Function Scope
+let → Block Scope
+const → Block Scope
+
+## Temporal Dead Zone (TDZ) 
+
+Wo time jab variable declare to ho chuka hota hai, lekin initialize hone 
+se pehle use nahi kiya ja sakta.
+⚠️ Ye sirf let aur const ke saath hota hai, var ke saath nahi.
+✅ let → TDZ hota hai.
+✅ const → TDZ hota hai.
+❌ var → TDZ nahi hota.
+
+✅ var → Hoisted → undefined
+✅ let → Hoisted + TDZ → ReferenceError
+✅ const → Hoisted + TDZ → ReferenceError
+✅ function → Fully hoisted (Function Declaration only)
+
+## Object.freeze() in JavaScript ❄️
+
+Object.freeze() object ko completely lock kar deta hai.
+Iske baad object me new property add, existing property update, ya delete
+ nahi kar sakte.
+ 
+ ✅ New properties add nahi kar sakte.
+✅ Existing properties change nahi kar sakte.
+✅ Properties delete nahi kar sakte.
+✅ Object read-only ban jata hai.
