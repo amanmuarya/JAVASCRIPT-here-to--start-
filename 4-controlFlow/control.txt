@@ -1,0 +1,30 @@
+## Control Flow in JavaScript
+
+Control Flow batata hai ki JavaScript code kis order (sequence) me execute hoga aur kis condition par kaunsa code chalega.  
+
+**Conditional statements -- ka use decision lene ke liye hota hai.
+
+**if Statement
+Definition
+if statement tab execute hota hai jab condition true ho.
+
+##if...else Statement
+Definition
+if...else me agar condition true ho to if block chalega, warna else block
+
+## if...else if...else
+Definition
+Jab multiple conditions check karni ho, tab else if use karte hain.
+
+## switch Statement
+Definition
+switch statement ka use ek variable ki value ko multiple cases se compare karne ke
+
+##Early Return Pattern in JavaScript 🔙
+Definition 
+Early Return Pattern ek coding technique hai jisme condition true hote hi function turant return kar deta hai, jisse baaki code execute nahi hota.
+
+✅ Code clean hota hai.
+✅ Nested if kam hote hain.
+✅ Readability improve hoti hai.
+✅ Bugs kam hote hain.
