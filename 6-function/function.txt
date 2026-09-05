@@ -1,0 +1,60 @@
+## Function in JavaScript ⚙️
+Definition 
+Function ek reusable block of code hota hai jo ek specific task perform karta hai. Ek baar function bana do, fir use jitni baar chahe call kar sakte ho.
+
+👉 Function = "Write once, use many times."
+✅ function keyword se function banta hai.
+✅ Ek baar define karo, baar-baar use karo.
+✅ Code duplication kam hota hai.
+✅ Parameters input lete hain.
+✅ return value wapas bhejta hai.
+
+## Default Parameters
+Definition 
+Default Parameter ka matlab hai ki agar function call karte waqt value pass nahi ki jaye, to function default value use karega.
+
+##Definition
+       ** Rest Parameter (...) multiple arguments ko ek array me collect karta hai.
+
+## 3. Spread Operator (...)
+Definition
+  --Spread Operator (...) array ya object ko individual elements me spread (expand) kar deta hai.
+
+  | Default Parameter                   | Rest Parameter                                    | Spread Operator                                          |
+| -----------------------------------   -------------------------------------------------     -------------------------------------------------------- 
+| Default value deta hai.              | Multiple arguments ko array me collect karta hai.  | Array/Object ko individual elements me expand karta hai. |
+| Function parameter me use hota hai.  | Function parameter me use hota hai.                | Function call, array aur object ke sath use hota hai.    |
+| Example: `name = "Guest"`            | Example: `...args`                                 | Example: `...arr`                                        |
+
+Default = Default Value
+Rest (...) = Collect
+Spread (...) = Expand
+
+## Return Value
+Definition 
+Return Value wo value hoti hai jo function return keyword ki help se caller ko wapas bhejta hai.
+👉 return ke baad function turant stop ho jata hai.
+
+##  Early Return
+Definition 
+Early Return ek coding technique hai jisme condition true hote hi function
+ turant return kar deta hai, aur baaki code execute nahi hota.
+
+
+ ## First-Class Function in JavaScript
+Definition 
+JavaScript me functions ko first-class citizens (first-class functions) mana jata hai.
+Iska matlab function ko value ki tarah use kar sakte hain.
+
+✅ Variable me store kar sakte hain.
+✅ Dusre function ko argument ke roop me pass kar sakte hain.
+✅ Function se return kar sakte hain.
+
+## Higher-Order Function (HOF) in JavaScript 
+Definition 
+Higher-Order Function (HOF) wo function hota hai jo:
+
+✅ Ek function ko argument ke roop me leta hai, ya
+✅ Ek function ko return karta hai.
+👉 Agar function function ke saath kaam karta hai, to wo Higher-Order Function hai.
+

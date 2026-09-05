@@ -1,0 +1,22 @@
+## Difference for and while Loop 
+Definition 
+for loop 👉 Jab number of iterations pehle se pata ho.
+while loop 👉 Jab iterations kitni baar chalengi, ye pehle se pata na ho.
+
+for → Fixed number of repetitions.
+while → Unknown number of repetitions (depends on a condition).
+
+## do...while Loop in JavaScript 
+Definition 
+do...while loop me code pehle execute hota hai, uske baad condition check hoti hai.
+ Isliye do...while kam se kam ek baar zaroor execute hota hai, chahe condition false hi kyu na ho.
+
+ ✅ do...while → Code pehle execute hota hai, condition baad me check hoti hai.
+
+## break Statement
+Definition 
+break ka use loop ya switch ko turant stop (exit) karne ke liye hota hai.
+
+##  continue Statement
+Definition 
+continue current iteration ko skip karta hai aur next iteration se loop continue karta hai.

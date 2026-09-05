@@ -1,0 +1,71 @@
+## forEach() -- Higher-Order Function hai kyunki ye callback function leta hai.
+
+| First-Class Function                            | Higher-Order Function                                        |
+| ----------------------------------------------- | ------------------------------------------------------------ |
+| Function ko value ki tarah treat kiya jata hai. | Function, function ko argument leta hai ya return karta hai. |
+| JavaScript ki feature hai.                      | First-Class Functions ki wajah se possible hai.              |
+
+Yaad Rakho
+✅ First-Class Function = Function ek value hai.
+✅ Higher-Order Function = Function function ke saath kaam karta hai.
+
+ ## Pure Function
+Definition 
+Pure Function wo function hota hai jo same input ke liye hamesha same output deta hai
+ aur bahar ki kisi value ko change nahi karta (no side effects).
+
+ ##. Impure Function
+Definition 
+
+Impure Function wo function hota hai jo same input par different output de sakta hai
+ ya bahar ki value (global variable) ko change karta hai.
+
+ | Pure Function                         | Impure Function                            |
+| ------------------------------------- | ------------------------------------------ |
+| Same input → Same output              | Same input → Different output ho sakta hai |
+| No side effects                       | Side effects ho sakte hain                 |
+| Global variables ko modify nahi karta | Global variables ko modify kar sakta hai   |
+| Easy to test                          | Test karna comparatively difficult         |
+ 
+ Pure Function   = Same Input → Same Output ✅
+Impure Function = Side Effects OR Different Output ❌
+
+## Closure in JavaScript 🔒
+Definition  
+Closure ek function hota hai jo apne outer (parent) function ke variables ko yaad
+ (remember) rakhta hai, even jab outer function execute ho chuka ho.
+
+👉 Simple: Inner function ko outer function ke variables ka access rehta hai.
+
+##Lexical Scoping in JavaScript 📦
+Definition 
+Lexical Scoping ka matlab hai ki ek function apne parent (outer) scope ke variables ko access kar sakta hai.
+Variable ka scope code likhte time (lexically) decide hota hai, na ki function call karte time.
+
+👉 Simple: Inner function → Outer function ke variables use kar sakta hai.
+
+✅ Lexical Scoping = Function apne parent scope ko access kar sakta hai.
+✅ Closure = Function parent scope ko outer function ke khatam hone ke baad bhi remember karta hai.
+
+##IIFE (Immediately Invoked Function Expression) in JavaScript 
+Definition 
+IIFE ek function hota hai jo define hote hi turant execute ho jata hai.
+ IIFE = Immediately Invoked Function Expression
+
+ Why Use IIFE?
+✅ Turant execute karna.
+✅ Global scope ko pollute hone se bachana.
+✅ Private variables banana.
+✅ Ek-time initialization code chalana.
+
+| Normal Function                          | IIFE                                              |
+| ---------------------------------------- | ------------------------------------------------- |
+| Pehle define, phir call karna padta hai. | Define hote hi automatically execute ho jata hai. |
+| Global scope me reh sakta hai.           | Apna private scope banata hai.                    |
+
+
+##Function Hoisting in JavaScript 🚀
+Definition 
+Function Hoisting ka matlab hai ki Function Declaration ko JavaScript code execute
+ hone se pehle memory me load (hoist) kar deta hai.
+👉 Isliye Function Declaration ko define karne se pehle bhi call kar sakte hain.
