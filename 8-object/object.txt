@@ -1,0 +1,54 @@
+## Object in JavaScript 📦
+
+Object JavaScript mein ek collection of key-value pairs hota hai. Isme related data aur functions (methods) ko ek saath store kiya jata hai.
+
+## name → Key
+   "Aman" → Value
+   age → Key
+   720 → Value
+
+👉 Simple Definition (Exam):
+Key property ka naam hota hai, aur Value us property mein store ki gayi information hoti hai.
+
+| Dot (`.`)           | Bracket (`[]`)                    |
+| ------------------- | --------------------------------- |
+| Fixed property name | Dynamic property name             |
+| Easy to read        | More flexible                     |
+| `person.name`       | `person["name"]` or `person[key]` |
+
+✅ Dot → Fixed key
+✅ Bracket → Dynamic key / Spaces / Special characters
+
+##1. Nesting
+Jab ek object ke andar dusra object ya array ho, usse Nesting kehte hain.
+
+## 2. Deep Access
+Nested object ke andar ki value access karna Deep Access kehlata hai.
+
+** Simple Definition (Exam):
+Nesting: Object ke andar object ya array rakhna.
+Deep Access: Nested object ki properties ko access karna using multiple dots (.) ya brackets ([]).
+
+## Object Destructuring 
+Object Destructuring ka use object ki properties ko direct variables mein store karne ke liye hota hai.
+
+##
+for...in → Object ki keys par loop chalata hai.
+Object.keys() → Object ki sabhi keys array mein return karta hai.
+Object.entries() → Object ke key-value pairs ko array mein return karta hai.
+
+## Reference Copy vs Deep Clone (JavaScript)
+1. Reference Copy
+Jab ek object ko dusre variable mein assign karte ho, to copy nahi banti. Dono variables same object ko refer karte hain.
+
+##. Reference Copy
+Jab ek object ko dusre variable mein assign karte ho, to copy nahi banti. Dono variables same object ko refer karte hain.
+
+##2. Deep Clone
+Deep Clone mein new object banta hai. Original object change nahi hota.
+
+| Reference Copy                     | Deep Clone                         |
+| ---------------------------------- | ---------------------------------- |
+| Same object ko refer karta hai     | Naya object banata hai             |
+| Ek change se dono affect hote hain | Sirf copied object change hota hai |
+| Memory share hoti hai              | Alag memory hoti hai               |
