@@ -1,0 +1,26 @@
+## DOM (Document Object Model) in JavaScript 
+Definition
+
+DOM (Document Object Model) HTML document ka programming interface hai.
+Ye HTML page ko tree structure (nodes) ke form me represent karta hai, jisse JavaScript HTML elements ko access aur manipulate kar sakti hai.
+👉 Simple:
+DOM = JavaScript ka HTML page se baat karne ka tarika.
+
+DOM se Kya Kar Sakte Hain?
+✅ HTML elements ko select kar sakte hain.
+✅ Text change kar sakte hain.
+✅ CSS change kar sakte hain.
+✅ New elements add/delete kar sakte hain.
+✅ Events (click, input, submit) handle kar sakte hain.
+| Method                           | Use                        |
+| -------------------------------- | -------------------------- |
+| `document.getElementById("id")`  | Select element by **id**   |
+| `document.querySelector("body")` | Select by **CSS selector** |
+| `document.body`                  | Directly select `<body>`   |
+
+document.getElementById()
+document.getElementsByClassName()
+document.getElementsByTagName()
+document.querySelector()
+document.querySelectorAll()
+
