@@ -1,0 +1,49 @@
+1. Local Storage in JavaScript 💾
+Definition:
+Local Storage browser ki storage hai jisme hum data permanently store kar sakte hain. Data tab tak rehta hai jab tak user usse manually delete na kare.
+👉 Simple:   ## localStorage.setItem()
+Local Storage = Browser ki permanent memory.
+
+2. API (Application Programming Interface) 🌐
+Definition :
+API (Application Programming Interface) ek medium (bridge) hai jo do applications ko aapas me communicate karne deta hai.
+👉 Simple:
+API = Do software ke beech baat karne ka tarika.
+
+API Kya Return Karti Hai?
+Mostly APIs JSON (JavaScript Object Notation) format me data return karti hain.
+ Local Storage                                        API                                                                 
+ 
+| Browser me data store karta hai. | Server se data bhejta aur laata hai.               
+| Internet ki zarurat nahi.        | Internet ki zarurat hoti hai (online API ke liye). 
+| Data browser me rehta hai.       | Data server/database se aata hai.                  
+
+💾 Local Storage = Store Data
+🌐 API = Get/Send Data
+
+## Session Storage in JavaScript 🗂️
+Definition 
+Session Storage browser ki storage hai jisme data sirf current browser tab ya session ke liye store hota hai.
+👉 Simple:
+Session Storage = Browser ki temporary memory.
+📌 Jab browser tab close karte ho, data automatically delete ho jata hai.
+
+Local Storage → Login preference, theme, language settings, etc.
+Session Storage → OTP verification, multi-step forms, temporary user data during a single browsing
+
+##Cookies in JavaScript 🍪
+Definition 
+Cookies browser me store hone wale chhote data (small text data) hote hain jo website user ki information ko save karne ke liye use karti hai.
+👉 Simple:
+Cookies = Browser me store hone wala small data.
+
+| Cookies                                     | Local Storage                           | Session Storage                         |
+| ------------------------------------------- | --------------------------------------- | --------------------------------------- |
+| Size ~4 KB                                  | ~5–10 MB                                | ~5–10 MB                                |
+| Expiry date set kar sakte hain              | No expiry (until deleted)               | Tab close hote hi delete                |
+| Server ke sath automatically send hoti hain | Server ko automatically nahi bheji jati | Server ko automatically nahi bheji jati |
+| Small data ke liye                          | Large data ke liye                      | Temporary data ke liye                  |
+
+🍪 Cookies → Login session, authentication token (often with secure/HttpOnly settings), user preferences.
+💾 Local Storage → Theme, language, settings, data that should persist after closing the browser.
+🗂️ Session Storage → OTP flow, shopping checkout progress, temporary form data for the current tab only.
