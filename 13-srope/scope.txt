@@ -1,0 +1,56 @@
+## Scope in JavaScript 
+Definition 
+Scope batata hai ki koi variable code ke kis area me accessible (use) hoga.
+👉 Simple:
+Scope = "Variable kaha tak use ho sakta hai."
+| Scope          | Description                                                      |
+| -------------- | ---------------------------------------------------------------- |
+| Global Scope   | Variable poore program me accessible hota hai.                   |
+| Function Scope | Variable sirf function ke andar accessible hota hai.             |
+| Block Scope    | Variable sirf `{}` block ke andar accessible hota hai.           |
+| Lexical Scope  | Inner function outer function ke variables access kar sakta hai. |
+
+🌍 Global Scope → Everywhere
+⚙️ Function Scope → Inside Function (var)
+📦 Block Scope → Inside {} (let, const)
+🔗 Lexical Scope → Child function can access Parent variables
+
+## Execution Context in JavaScript ⚙️
+Definition
+Execution Context wo environment hai jahan JavaScript code execute hota hai.
+👉 Simple:
+Execution Context = "JavaScript code chalne ka environment."
+
+1. Global Execution Context (GEC) 🌍
+Program start hote hi create hota hai.
+Sirf ek baar banta hai.
+this global object ko point karta hai (window in browsers).
+
+2. Function Execution Context (FEC) ⚙️
+Jab bhi koi function call hota hai, us function ke liye naya Execution Context banta hai.
+Function khatam hote hi ye destroy ho jata hai.
+
+Execution Context aur Call Stack ek saath kaam karte hain.
+Function call → New Execution Context banta hai.
+Ye Call Stack me push hota hai.
+Function complete → Execution Context stack se pop ho jata hai.
+👉 Execution Context = Environment, Call Stack = Execution Contexts ko manage karne wali stack.
+
+##Closure tab banta hai jab:
+Ek function doosre function ke andar ho.
+Inner function outer function ko access kare.
+Inner function outer function ke return hone ke baad bhi un variables ko use kare.
+
+Closure = Function + Remembered Lexical Environment
+Uses of Closure
+✅ Data Privacy (Private Variables)
+✅ Counter
+✅ Event Handlers
+✅ Callbacks
+✅ Memoization
+✅ Function Factory
+
+Closure in JavaScript 
+Definition 
+Closure ek function hota hai jo apne outer (parent) function ke variables ko yaad (remember) rakhta hai, even jab outer function execute ho chuka ho.
+Closure = "Inner function remembers the outer function's variables."
