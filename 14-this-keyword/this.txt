@@ -1,0 +1,75 @@
+##--this Keyword in JavaScript 👉
+Definition
+this ek special keyword hai jo current object ko refer karta hai.
+👉 Simple:
+this = "Abhi jis object ke andar code chal raha hai, us object ko refer karta hai."
+⚠️ Important: this ki value is baat par depend karti hai ki function ko kaise call kiya gaya hai.
+
+| Situation                     | `this` refers to                     |
+| ----------------------------- | ------------------------------------ |
+| Global Scope (Browser)        | `window`                             |
+| Object Method                 | Current Object                       |
+| Normal Function (Non-Strict)  | `window`                             |
+| Normal Function (Strict Mode) | `undefined`                          |
+| Arrow Function                | Outer (Lexical) `this`               |
+| Event Listener                | The element that triggered the event |
+
+##Class in JavaScript 🏛️
+Definition 
+Class ek blueprint (template) hoti hai jisse hum objects banate hain.
+👉 Simple:
+Class = Object banane ka template.
+
+## constructor() Kya Hai?
+Constructor ek special method hai jo object create hote hi automatically call hota hai.
+this = Current Object 👈
+
+## Arrow Function & Lexical this in JavaScript 🏹
+1. Arrow Function
+Definition
+Arrow Function (=>) ES6 me introduce hua ek short syntax hai function likhne ka.
+
+##  Lexical this
+Definition 
+Arrow Function ka apna this nahi hota.
+Ye apne parent (outer scope) ka this use karta hai.
+👉 Isi ko Lexical this kehte hain.
+
+| Normal Function                          | Arrow Function                          |
+| ---------------------------------------- | --------------------------------------- |
+| Apna `this` hota hai.                    | Apna `this` nahi hota.                  |
+| `this` call ke hisab se change hota hai. | `this` outer scope se inherit hota hai. |
+| Constructor ban sakta hai.               | Constructor nahi ban sakta.             |
+| `arguments` object hota hai.             | `arguments` object nahi hota.           |
+
+
+Kab Arrow Function Use Kare?
+✅ setTimeout()
+✅ setInterval()
+✅ map(), filter(), reduce()
+✅ Event callbacks (jab outer this preserve karna ho)
+Kab Normal Function Use Kare?
+✅ Object methods
+✅ Constructors
+✅ Jab dynamic this ki zarurat ho
+
+## call aply bind
+
+| `call()`             | `apply()`             | `bind()`                     |
+| -------------------- | --------------------- | ---------------------------- |
+| Executes immediately | Executes immediately  | Does not execute immediately |
+| Arguments separately | Arguments in an array | Returns a new function       |
+| Changes `this`       | Changes `this`        | Permanently binds `this`     |
+
+1. call()
+Definition
+call() function ko immediately execute karta hai aur arguments ko alag-alag pass karta hai.
+
+2. apply()
+Definition
+apply() bhi function ko immediately execute karta hai, lekin arguments array ke form me pass karta hai.
+
+3. bind()
+Definition
+bind() function ko execute nahi karta.
+Ye ek naya function return karta hai jisme this permanently bind ho jata hai.
