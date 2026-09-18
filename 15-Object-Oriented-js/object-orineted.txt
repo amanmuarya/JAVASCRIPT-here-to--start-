@@ -1,0 +1,23 @@
+## OOP (Object-Oriented Programming) in JavaScript 🏛️
+Definition 
+OOP (Object-Oriented Programming) ek programming paradigm hai jisme hum objects aur classes ka use karke code likhte hain.
+👉 Simple:
+OOP = "Objects ki help se programming karna."
+
+## Four Pillars of OOP
+1. Encapsulation 📦
+Data aur methods ko ek object/class ke andar bundle karna.
+
+## Inheritance 👨‍👦
+Ek class dusri class ki properties aur methods inherit karti hai.
+
+## 3. Polymorphism 🔄
+Same method alag-alag classes me different behavior dikhata hai.
+
+## Abstraction 🎭
+Sirf important details dikhana aur implementation hide karna.
+Example:
+Car chalate waqt tum sirf steering, brake aur accelerator use karte ho. Engine andar kaise kaam karta hai, ye hidden hota hai.
+
+## Interview Tip
+JavaScript prototype-based language hai, lekin ES6 (class) ke baad hum OOP ko class syntax se likhte hain.
